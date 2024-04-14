@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UFT-8">
+        <meta name="Viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/pagina2.css">
+        <title>Document</title>
+        <style>
+            body {
+                background-color: white;
+                color: black;
+            }
+            body.dark-theme {
+                background-color: #333;
+                color: white;
+            }
+        </style>
+
+    </head>
+    <body>
+        <div class="cont">
+            <div class="nav">
+                <ul>
+                    <li><img src="assets/img/" alt="" width="50px"></li>
+                    <li><img src="assets/img/" alt="" width="40px"></li>
+                    <li><img src="assets/img/" alt="" width="70px"></li>
+                    <li><img src="assets/img/" alt="" width="50px"></li>
+                </ul>
+            </div>
+            <div class="fun">
+                <div class="set">
+                    <div class="setting">
+                        <img src="assets/img/" alt="">
+                        <h1>setting</h1>
+                        <img src="assets/img/" alt="">
+                    </div>
+                    <div class="nav2">
+                        <ul>
+                            <li>
+                                <p><a href="privacy.html">General Privacy Statement</a></p>                               
+                            </li>
+                            <li>
+                                <a href="privacy.html"><p>Privacy Statement</p></a>
+                                <li>
+                                    <li>
+                                        <p><a href="terms.html">Terms os use</a></p>
+                                        <li>
+                                            <li>
+                                                <a href="terms.html"><p>About</p></a>
+                                            </li>
+                                            <ul>
+                                            </div>
+                                         </div>
+                                         <p><a href="options.html">Options</a></p>
+                                         <h3>Chosee edition</h3>
+                                         <select id="talent">
+                                            <option value="option1">Unite States (English)</option>
+                                            <option value="option2">Option 2</option>
+                                            <option value="option3">Option 3</option>
+                                         </select>
+                                         <br>
+                                         <h3>Dark Theme Mode(for Articles)</h3>
+                                         <br>
+                                         <button id="darkthemeToggle">on/off</button>
+                                         <script>
+                                            const themeTeggle = document.getElementById('darkThemeToggle');
+                                             themeTeggle.addEventListener('click',()=>{
+                                                document.body.classList.toggle('dark-theme');
+                                                themeTeggle.textContent=document.body.classList.contains('dark-theme')
+                                                                ?
+                                                'dark Theme Mode (for Articles) on'
+                                                                :
+                                                'Dark Theme Mode (for Artitles)off'
+                                             })                                            
+                                         </script>
+                                         <a href="practictica1.html">pagina uno</a>
+                                         <p><label><input type="checkbox" checked> Breaking News Alerts On</label></p>
+                                         <div>
+                                         </div>
+                                            </ul>
+                                        </li>
+                                    </li>
+                                </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

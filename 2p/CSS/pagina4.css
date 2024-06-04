@@ -1,0 +1,12 @@
+body { font-family: Arial, sans-serif; }
+  .container { width: 80%; margin: 0 auto; }
+  h2 { text-align: center; }
+  form { margin-top: 20px; }
+  .form-group { margin-bottom: 10px; }
+  label { display: block; }
+  input[type="text"], select, .address { width: 100%; }
+  .half-width { width: 49%; float: left; }
+  .right { float: right; }
+  .clear { clear: both; }
+  .button-container { text-align: right; margin-top: 20px; }
+  button { margin-left: 10px; }

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UFT-8">
+    <meta name="Viewport" content="width=device-width,initial-scale=1.0">
+    <title>Formulario Multicolumna</title>
+    <style>
+        /* Estilos basicos para el formulario */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .formulario {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 960;
+            margin: 20px auto;
+            background-color: #4d36f8;
+            padding: 20px;
+            box-shadow: 0 0 10px rgb(0,0, 0 0.1);
+        }
+        .columna {
+            flex: 1;
+            min-width: 200px;
+            margin: 30px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #f4f0f0;
+        }
+        input,select, textarea{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid rgb(250,249,249);
+            border-radius: 5px;
+        }
+        .boton{
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background-color: dodgerblue;
+            color: rgb(247,248,249);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .boton:hover{
+            background-color: dodgerblue;
+        }
+        /*Estilos para los iconos*/
+        .iconos{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .icono{
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-color: dodgerblue;
+            color: aliceblue;
+            border-radius: 50px;
+            margin: 0 5px;
+            line-height: 30px;
+        }
+        /*Estilos responsivos */
+        @media (max-width:768px){
+            .columna{
+                flex-basis: 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="iconos">
+    <div class="icono"></div>
+    <div class="icono"></div>
+    <div class="icono"></div>
+ </div>
+
+<form class="formulario">
+    <!-- Columna izquierda -->
+    <div class="columna">
+        <label for="name">FIRST NAME</label>
+        <input type="text" id="name" placeholder="jonathan">
+
+        <label for="email">LAST NAME</label>
+        <input type="text" id="last" placeholder="Doe">
+        
+        <label for="email">EMAIL ADRESS</label>
+        <input type="text" id="email" placeholder="jon@doe.com">
+
+        <label for="count">COUNTRY</label>
+        <select id="count">
+            <option value="">Choose a  country</option>
+            <option value="">Corea del sur</option>
+            <option value="">Mexico</option>
+            <!-- Opciones de paises van aqui -->
+        </select>
+
+        <label for="biography">BIOGRAPHY</label>
+        <textarea id="biography" placeholder="BIOGRAPHY"></textarea>
+    </div>
+
+    <!--Columna central -->
+    <div class="columna">
+        <label for="number">PHONE NUMBER</label>
+        <input type="number" id="phone" placeholder="+351 999 999">
+
+        <label for="affiliations">AFFILIATIONS</label>
+        <textarea id="affiliations" placeholder="affiliations"></textarea>
+
+        <label for="occupation">OCCUPATION</label>
+        <select id="occupation">
+            <option value="">Choose an occupation</option>
+        </select>
+
+        <label for="cat">CAT'S NAME</label>
+        <input type="CAT'S NAME" id="kitty" placeholder="kitty">
+
+        <label for="favorite">FAVORITE GADGET</label>
+        <input type="text" id="gadget" placeholder="Annoy-a-tron">
+    </div>
+    
+    <!--Columna derecha -->
+    <div class="columna">
+        <label for="type">TYPE OF TALENT</label>
+        <select id="talento">
+            <option value="">Choose a talent</option>
+            <!-- Opciones de talentos van aqui -->
+        </select>
+
+        <label for="drink">FAVORITE DRINK</label>
+        <input type="text" id="Favorite drink" placeholder="Green Tea">
+
+        <label for="power">SPECIAL POWER</label>
+        <input type="text" id="power" placeholder="Anti-gravity">
+
+        <label for="weapon">WEAPON OF CHOICE</label>
+        <input type="text" id="choice" placeholder="lightsaber">
+
+        <label for="comentarios">Comentarios</label>
+        <textarea id="comentarios" placeholder="Comentarios"></textarea>
+    </div>
+
+</body>
+</html>

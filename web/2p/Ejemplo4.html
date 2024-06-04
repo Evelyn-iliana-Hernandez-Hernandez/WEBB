@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Orden de Venta SO004</title>
+<link rel="stylesheet" href="CSS/pagina4.css">
+<style>
+  
+</style>
+</head>
+<body>
+<div class="container">
+  <h2>Orden de Venta SO004</h2>
+  <form>
+    <div class="form-group half-width">
+      <label for="order-date">Fecha de Pedido:</label>
+      <input type="date" id="order-date">
+    </div>
+    <div class="form-group half-width right">
+      <label for="sales-status">Estado de Venta:</label>
+      <select id="sales-status">
+        <option value="invoice">Factura</option>
+        <!-- Más estados aquí -->
+      </select>
+    </div>
+    <div class="form-group clear">
+      <label for="customer-ref">Referencia de Pedido del Cliente:</label>
+      <input type="text" id="customer-ref">
+    </div>
+    <div class="form-group half-width">
+      <label>Nombre del Cliente:</label>
+      <div class="address">Lynn Haney</div>
+      <label>Dirección:</label>
+      <div class="address">123 Gray Rd AP 762 Colorado Springs CO 80001 US</div>
+    </div>
+    <div class="form-group half-width right">
+      <label for="description">Descripción:</label>
+      <input type="text" id="description">
+    </div>
+    <div class="form-group clear">
+      <label for="quantity">Cantidad:</label>
+      <input type="number" id="quantity" value="30">
+      <label for="unit-measure">Unidad de Medida:</label>
+      <input type="text" id="unit-measure">
+      <label for="currency">Moneda:</label>
+      <select id="currency">
+        <option value="USD">USD</option>
+        <!-- Más monedas aquí -->
+      </select>
+      <label for="freight-terms">Términos de Flete:</label>
+      <select id="freight-terms">
+        <option value="FOB">FOB</option>
+        <!-- Más términos aquí -->
+      </select>
+      <label for="shipping-method">Método de Envío:</label>
+      <select id="shipping-method">
+        <option value="airborne">Aéreo</option>
+        <!-- Más métodos aquí -->
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Dirección de Entrega:</label>
+      <div class="address">123 Gray Rd AP 762 Colorado Springs CO 80001 US</div>
+    </div>
+    <div class="button-container">
+      <button type="reset">Limpiar</button>
+      <button type="submit">Enviar Pedido</button>
+    </div>
+  </form>
+</div>
+</body>
+</html>
